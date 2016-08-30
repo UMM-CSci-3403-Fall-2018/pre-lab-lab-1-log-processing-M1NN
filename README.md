@@ -21,7 +21,10 @@ The *pre-lab* is an *individual* project, but the lab will be done in pairs. You
 
 ## Pre-lab readings and resources
 
-Read the **entire** lab in advance (<https://github.umn.edu/UMM-CSci3403-F15/lab1/wiki>) and definitely ask questions, especially conceptual ones.
+Read the **entire** lab in advance (<https://github.umn.edu/UMM-CSci3403-F15/lab1/wiki>) and definitely ask questions, 
+especially conceptual ones. :exclamation: **You should consider what's currently there a draft write-up and not actually 
+start working on it until we have this semester's write-up available. I'm working on some potentially substantial changes 
+to how the testing is being done here, and that could alter parts of the write-up a fair bit.**
 
 Below is a list of some key tools we'll use a lot in this lab. Some were covered in readings associated with the previous lab; others have links to potentially useful material that you should at least skim before lab.
 
