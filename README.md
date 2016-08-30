@@ -25,13 +25,13 @@ Read the **entire** lab in advance (<https://github.umn.edu/UMM-CSci3403-F15/lab
 
 Below is a list of some key tools we'll use a lot in this lab. Some were covered in readings associated with the previous lab; others have links to potentially useful material that you should at least skim before lab.
 
-* Bash command line arguments : Top of <http://www.ibm.com/developerworks/linux/library/l-bash2/index.html>
-* Bash loops : <http://www.cyberciti.biz/faq/bash-for-loop/>, <http://tldp.org/LDP/abs/html/loops1.html>
-* awk : http://www.thegeekstuff.com/2010/01/awk-introduction-tutorial-7-awk-print-examples/, http://www.grymoire.com/Unix/Awk.html
-* sed : http://www.grymoire.com/Unix/Sed.html, http://www.panix.com/~elflord/unix/sed.html
-* grep : http://www.panix.com/~elflord/unix/grep.html, http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html
-* Google's charting tools : http://code.google.com/apis/chart/
-* http://linux.die.net/abs-guide/textproc.html has a ton of info on the tools mentioned above along with others that will likely prove useful in the lab (e.g., `wc`, `head`, `sort`, etc.)
+* `bash` command line arguments. These were covered in some of the readings for the previous lab; the top of [this bash tutorial](http://www.ibm.com/developerworks/linux/library/l-bash2/index.html) also covers command line arguments specifically.
+* `bash` loops. If loops in `bash` feel like they're from another world, it's really because they are. They rather betray their age and the fact that they're kinda "hacked in" to a tool (`bash`) that wasn't really built with full-on programming in mind. [This tutorial](http://www.cyberciti.biz/faq/bash-for-loop/) and [that tutorial](http://tldp.org/LDP/abs/html/loops1.html) provide nice overviews and examples.
+* `awk` is a very powerful Unix tool that can be used to automate loads of shell processes, but it takes some effort to learn. In many ways you'd probably rather use a modern scripting language like Ruby or Python, but `awk` is part of most any Unix installation, where you may not have Python or Ruby by default. You might find [this tutorial](http://www.thegeekstuff.com/2010/01/awk-introduction-tutorial-7-awk-print-examples/) or [that tutorial](http://www.grymoire.com/Unix/Awk.html) useful.
+* `sed` (`s`tream `ed`itor) is another powerful, if old-school, standard Unix tools, that is particular useful doing "on-the-fly" editing of files or material coming through shell pipes. [this tutorial](http://www.grymoire.com/Unix/Sed.html) or [that tutorial](http://www.panix.com/~elflord/unix/sed.html) might help.
+* `grep` was used in the previous lab, but here are some more `grep` resources in case that's useful: [this tutorial](http://www.panix.com/~elflord/unix/grep.html) and [that tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html)
+* [Google's charting tools](http://code.google.com/apis/chart/) support a broad range of sophisticated chart styles and types. In this lab we'll use Google's charting tools to visualize logging information from our lab.
+* <http://linux.die.net/abs-guide/textproc.html> has a ton of info on the tools mentioned above along with others that will likely prove useful in the lab (e.g., `wc`, `head`, `sort`, etc.)
 
 There's obviously tons of information on-line about all these tools, so feel free to search for other sources of info if these aren't working for you. You should do some background reading on/playing with these things before lab, though, so you don't spend all of the lab period Googling around for info on these tools.
 
