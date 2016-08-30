@@ -41,9 +41,9 @@ There's obviously tons of information on-line about all these tools, so feel fre
 
 In the full lab there are multiple occasions where we have some text that we want to wrap in a header and footer: The username distribution data is wrapped in its header and footer, the hours data is wrapped in its header and footer, the country distribution data is wrapped in its header and footer, and the combination of these texts is then wrapped in the overall header and footer. The script `wrap_contents.sh` is designed to automate this repeated process. It should take three arguments:
 
-1. The name of the file containing the "contents" that need to be wrapped, 
-2. The name used to specify the desired header and footer, 
-3. The name of the resulting file. 
+1. The name of the file containing the "contents" that need to be wrapped,
+2. The name used to specify the desired header and footer,
+3. The name of the resulting file.
 
 For example, this call:
 
@@ -59,30 +59,30 @@ There is a simple set of tests in `wrap_tests.bats` that give you a sense of whe
 
 ### Make a sample pie chart using `wrap_contents.sh`
 
-To give you an idea of what `wrap_contents.sh` will be used for in the lab, there are three files in the the `chart_example` directory in this repository: 
+To give you an idea of what `wrap_contents.sh` will be used for in the lab, there are three files in the the `chart_example` directory in this repository:
 
 * `meats.txt`
 * `bread_header.html`
-* `bread_footer.html`. 
+* `bread_footer.html`.
 
 If you wrote your `wrap_contents.sh` script correctly, this call
 
 ```
-./wrap_contents.sh meats.txt bread our_chart.html
+./wrap_contents.sh meats.txt bread my_chart.html
 ```
 
-should produce an HTML file called `our_chart.html` that, when loaded in your favorite browser, displays a pie chart indicating preferences for different sandwich meats. Generate that HTML file (`our_chart.html`) and commit it as part of your repository.
+should produce an HTML file called `my_chart.html` that, when loaded in your favorite browser, displays a pie chart indicating preferences for different sandwich meats. Generate that HTML file (`my_chart.html`) and commit it as part of your repository.
 
 The file `chart_example/sample_chart.html` is an example of the kind of thing you're looking to create, so you should be able to compare your work to that; `wrap_tests.bats` will do that automatically but you should probably check it yourself as well.
 
 ### Practice with regular expressions
 
-Using [regexr](http://regexr.com/) or [Rubular](http://rubular.com/) (or similar) write regular expressions that would take the 
-following input values and return the output values paired with it.  You may find 
-[this tutorial](http://gnosis.cx/publish/programming/regular_expressions.html) and 
+Using [regexr](http://regexr.com/) or [Rubular](http://rubular.com/) (or similar) write regular expressions that would take the
+following input values and return the output values paired with it.  You may find
+[this tutorial](http://gnosis.cx/publish/programming/regular_expressions.html) and
 [that tutorial](http://regexcrossword.com/) useful.
 
-You should add your three regular expressions to the file `regex.txt` and commit 
+You should add your three regular expressions to the file `regex.txt` and commit
 them as part of your repository.
 
 #### Regex 0
@@ -180,6 +180,6 @@ Be sure to complete the following before the start of lab:
 * Fork this pre-lab repository
 * Do the Exercises (adding and commiting as you go)
    - [ ] Complete `wrap_contents.sh` (Exercise 1)
-   - [ ] Produce `our_chart.html` with the pie chart (Exercise 2)
+   - [ ] Produce `my_chart.html` with the pie chart (Exercise 2)
    - [ ] Include your three regular expression in `regex.txt` (Exercise 3)
 * Make sure you push your changes up to Gitub.
