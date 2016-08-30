@@ -1,6 +1,6 @@
 # Log-processing-pre-lab
 
-Pre-lab for the "Log processing" lab.
+This is the pre-lab for the "Log processing" lab. It gives you some additional readings, along with practice with shell scripting, using Google Charts, and regular expressions.
 
 ##Table of Contents
 
@@ -51,9 +51,11 @@ For example, this call:
 ./wrap_contents.sh gloop.txt bits target.html
 ```
 
-will cause the contents of the file `gloop.txt` to be wrapped between the contents of `bits_header.html` and the contents of `bits_footer.html`, with the results being placed in `target.html`. This assumes that `gloop.txt`, `bits_header.html`, and `bits_footer.html` all exist.  The script should overwrite `target.html` if there was a file with that name. 
+will cause the contents of the file `gloop.txt` to be wrapped between the contents of `bits_header.html` and the contents of `bits_footer.html`, with the results being placed in `target.html`. This assumes that `gloop.txt`, `bits_header.html`, and `bits_footer.html` all exist.  The script should overwrite `target.html` if there was a file with that name.
 
-This requires that you can handle shell script command line arguments. The actual joining of the files can be easily accomplished with `cat`. This should be a short little script; if you spend more than 15-20 minutes on it I would definitely start asking some questions. The trickiest part is probably forming the correct file names from the arguments you're given; curly braces might be useful there.
+The actual joining of the files can be easily accomplished with `cat`. This should be a short little script; if you spend more than 15-20 minutes on it I would definitely start asking some questions. The trickiest part is probably forming the correct file names from the arguments you're given; curly braces might be useful there.
+
+There is a simple set of tests in `wrap_tests.bats` that give you a sense of whether your implementation of `wrap_contents.sh` works.
 
 ### Make a sample pie chart using `wrap_contents.sh`
 
@@ -69,79 +71,92 @@ If you wrote your `wrap_contents.sh` script correctly, this call
 ./wrap_contents.sh meats.txt bread our_chart.html
 ```
 
-should produce an HTML file that, when loaded in your favorite browser, displays a pie chart indicating preferences for different sandwich meats with a call like
+should produce an HTML file called `our_chart.html` that, when loaded in your favorite browser, displays a pie chart indicating preferences for different sandwich meats. Generate that HTML file (`our_chart.html`) and commit it as part of your repository.
 
-The file `chart_example/sample_chart.html` is an example of the kind of thing you're looking to create, so you should be able to compare your work to that.
+The file `chart_example/sample_chart.html` is an example of the kind of thing you're looking to create, so you should be able to compare your work to that; `wrap_tests.bats` will do that automatically but you should probably check it yourself as well.
 
 ### Practice with regular expressions
 
-Using [regexr](http://regexr.com/) (or [Rubular](http://rubular.com/) or [Regex Raptor](http://regexraptor.net/)), write regular expressions that would take the following input values and return the output values paired with it.  You may find <http://gnosis.cx/publish/programming/regular_expressions.html> and <http://regexcrossword.com/> useful.
+Using [regexr](http://regexr.com/) or [Rubular](http://rubular.com/) (or similar) write regular expressions that would take the 
+following input values and return the output values paired with it.  You may find 
+[this tutorial](http://gnosis.cx/publish/programming/regular_expressions.html) and 
+[that tutorial](http://regexcrossword.com/) useful.
+
+You should add your three regular expressions to the file `regex.txt` and commit 
+them as part of your repository.
+
+#### Regex 0
+
+**Input:**
+
+```
+* KK, muffins
+* Nic, donuts
+* Vincent, juice
+```
+
+**Output:**
+
+```
+Match 1
+
+1. KK
+2. muffins
+
+Match 2
+
+1. Nic
+2. donuts
+
+Match 3
+
+1. Vincent
+2. juice
+```
 
 #### Regex 1
 
 **Input:**
 
-* KK, muffins
-* Nic, donuts
-* Vincent, juice
-
-*output:*
-
-Match 1
-
-1. KK
-1. muffins
-
-Match 2
-
-1. Nic
-1. donuts
-
-Match 3
-
-1. Vincent
-1. juice
-
-**regex 2**
-
-*input:*
-
+```
 * I am KK. My favorite sandwich is turkey.
 * I am Nic. My favorite sandwich is avacado.
 * I am awesome. I love puppies, but I don't like sandwiches.
 * I am Vincent. My favorite sandwich is ham.
+```
 
-*output:*
+**Output:**
 
+```
 Match 1
 
 1. KK
-1. turkey
+2. turkey
 
 Match 2
 
 1. Nic
-1. avacado
+2. avacado
 
 Match 3
 
-*no match*
-
-Match 4
-
 1. Vincent
-1. ham
+2. ham
+```
 
-**regex 3**
+#### Regex 3
 
-*input:*
+**Input:**
 
+```
 * sandwich with turkey.bacon.swiss. for here
 * sandwich with ham.cheddar. to go
 * sandwich with tunaSalad. to go
+```
 
-*output:*
+**Output:**
 
+```
 Match 1
 
 1. turkey.bacon.swiss.
@@ -156,18 +171,15 @@ Match 3
 
 1. tunaSalad.
 1. to go
+```
 
-When you have your three regular expressions, put them in a text file and commit it along with your `wrap_contents.sh` script to the `Prelab` folder in your branch.  Be sure to push your changes.
+## What to turn in
 
-##To turn in
+Be sure to complete the following before the start of lab:
 
-Be sure to complete the following before the start of lab on Tuesday:
-
-* Add your group to the [[group wiki page|groups]]
-* Fork the Lab1 repository and add collaborators (use your group name in the description)
-* Add your group identifier file `Prelab` folder
-* Do the Exercises
-   * Include `wrap_contents.sh` in the 'Prelab' folder (exercise 1)
-   * Produce a pie chart (exercise 2):  you do NOT have to turn it in
-   * Include your three regular expression in a text file (exercise 3)
-* Add your new files to the repository (do this from the repository root directory), commit your changes, and push.
+* Fork this pre-lab repository
+* Do the Exercises (adding and commiting as you go)
+   - [ ] Complete `wrap_contents.sh` (Exercise 1)
+   - [ ] Produce `our_chart.html` with the pie chart (Exercise 2)
+   - [ ] Include your three regular expression in `regex.txt` (Exercise 3)
+* Make sure you push your changes up to Gitub.
