@@ -2,14 +2,14 @@
 
 This is the pre-lab for the "Log processing" lab. It gives you some additional readings, along with practice with shell scripting, using Google Charts, and regular expressions.
 
-##Table of Contents
+## Table of Contents
 
 * [Overview](#Overview)
 * [Readings](#Pre-lab-readings-and-resources)
 * [Exercises](#Exercises)
 * [To Turn In](#To-turn-in)
 
-##Overview
+## Overview
 
 The goal of this pre-lab is to help prepare us for the "Log processing lab". In particular we'll provide a set of potentially useful readings on particular topics that might be useful, and do three small exercises:
 
@@ -21,10 +21,8 @@ The *pre-lab* is an *individual* project, but the lab will be done in pairs. You
 
 ## Pre-lab readings and resources
 
-Read the **entire** lab in advance (<https://github.umn.edu/UMM-CSci3403-F15/lab1/wiki>) and definitely ask questions, 
-especially conceptual ones. :exclamation: **You should consider what's currently there a draft write-up and not actually 
-start working on it until we have this semester's write-up available. I'm working on some potentially substantial changes 
-to how the testing is being done here, and that could alter parts of the write-up a fair bit.**
+Read the **entire** lab in advance (<https://github.umn.edu/UMM-CSci3403-F15/lab1/wiki>) and definitely ask questions,
+especially conceptual ones.
 
 Below is a list of some key tools we'll use a lot in this lab. Some were covered in readings associated with the previous lab; others have links to potentially useful material that you should at least skim before lab.
 
