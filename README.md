@@ -69,7 +69,7 @@ To give you an idea of what `wrap_contents.sh` will be used for in the lab, ther
 If you wrote your `wrap_contents.sh` script correctly, this call
 
 ```
-./wrap_contents.sh meats.txt bread my_chart.html
+../wrap_contents.sh meats.txt bread my_chart.html
 ```
 
 should produce an HTML file called `my_chart.html` that, when loaded in your favorite browser, displays a pie chart indicating preferences for different sandwich meats. Generate that HTML file (`my_chart.html`) and commit it as part of your repository.
