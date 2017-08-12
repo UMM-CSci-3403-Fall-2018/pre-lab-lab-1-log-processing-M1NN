@@ -145,7 +145,7 @@ Match 3
 2. ham
 ```
 
-#### Regex 3
+#### Regex 2
 
 **Input:**
 
