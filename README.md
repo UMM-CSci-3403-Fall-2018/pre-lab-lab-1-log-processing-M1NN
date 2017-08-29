@@ -4,10 +4,10 @@ This is the pre-lab for the "Log processing" lab. It gives you some additional r
 
 ## Table of Contents
 
-* [Overview](#Overview)
-* [Readings](#Pre-lab-readings-and-resources)
-* [Exercises](#Exercises)
-* [To Turn In](#To-turn-in)
+* [Overview](#overview)
+* [Readings](#pre-lab-readings-and-resources)
+* [Exercises](#exercises)
+* [To Turn In](#what-to-turn-in)
 
 ## Overview
 
@@ -21,7 +21,7 @@ The *pre-lab* is an *individual* project, but the lab will be done in pairs. You
 
 ## Pre-lab readings and resources
 
-Read the **entire** lab in advance (<https://github.umn.edu/UMM-CSci3403-F15/lab1/wiki>) and definitely ask questions,
+Read the **entire** lab in advance (<https://classroom.github.com/g/Gkymc_Cv>) and definitely ask questions,
 especially conceptual ones.
 
 Below is a list of some key tools we'll use a lot in this lab. Some were covered in readings associated with the previous lab; others have links to potentially useful material that you should at least skim before lab.
@@ -178,9 +178,10 @@ Match 3
 
 Be sure to complete the following before the start of lab:
 
-* Fork this pre-lab repository
+* Accept (individually) the github classroom assignment
 * Do the Exercises (adding and commiting as you go)
    - [ ] Complete `wrap_contents.sh` (Exercise 1)
    - [ ] Produce `my_chart.html` with the pie chart (Exercise 2)
    - [ ] Include your three regular expression in `regex.txt` (Exercise 3)
 * Make sure you push your changes up to Gitub.
+* Submit your URL to canvas when you are ready to be graded.
