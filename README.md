@@ -17,7 +17,7 @@ The goal of this pre-lab is to help prepare us for the "Log processing lab". In 
 - [ ] See how we can use that helper script to construct HTML/Javascript files that use the Google Charts tools to generate a nice graph.
 - [ ] Experiment a little with regular expressions.
 
-The *pre-lab* is an *individual* project, but the lab will be done in pairs. You should again fork this repository and do your work in your copy. You should turn in the URL for your repository in whatever way the instructor requests.
+The *pre-lab* is an *individual* project, but the lab will be done in pairs. You should, again, clone your classroom repository and do your work in your copy. You should turn in the URL for your repository in whatever way the instructor requests.
 
 ## Pre-lab readings and resources
 
