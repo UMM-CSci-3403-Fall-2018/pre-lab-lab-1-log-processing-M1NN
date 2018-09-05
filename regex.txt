@@ -1,0 +1,8 @@
+Regex 0:
+/(?<Name>\w{1,}), (?<Item>\w{1,})/
+
+Regex 1:
+/am (?<Name>\w{1,}). My favorite sandwich is (?<Sandwich>\w{1,})/
+
+Regex 2:
+/sandwich with (?<Name>\S{1,}).(?<Type>(\w{1,}) (\w{1,}))/
